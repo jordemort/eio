@@ -1,0 +1,5 @@
+eio (1.7.4-1) experimental; urgency=low
+
+  * Initial upload to Debian (Closes: #696734)
+
+ -- Albin Tonnerre <lutin@debian.org>  Sun, 23 Dec 2012 18:29:37 +0100

@@ -1,0 +1,10 @@
+Document: eio
+Title: Eio Guide
+Author: Carsten Haitzler
+Abstract: This document describes the Eio API
+ and provides sample C code.
+Section: Programming/C
+
+Format: HTML
+Index: /usr/share/doc/libeio-doc/html/index.html
+Files: /usr/share/doc/libeio-doc/html/*.html

@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+CFLAGS += -fvisibility=hidden
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+	--enable-doc
+
+override_dh_auto_build-indep:
+	$(MAKE) doc
+
+override_dh_makeshlibs:
+	dh_makeshlibs -V
+
+override_dh_strip:
+	dh_strip --dbg-package=libeio-dbg

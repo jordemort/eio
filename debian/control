@@ -1,0 +1,66 @@
+Source: eio
+Section: libs
+Priority: optional
+Maintainer: Debian Pkg-e Team <pkg-e-devel@lists.alioth.debian.org>
+Uploaders: Albin Tonnerre <lutin@debian.org>
+Build-Depends: dpkg-dev (>= 1.14.8), debhelper (>= 9),
+ libeina-dev (>= 1.7.4), libeet-dev (>= 1.7.4), libecore-dev (>= 1.7.4)
+Build-Depends-Indep: doxygen
+Standards-Version: 3.9.4
+Homepage: http://enlightenment.org
+Vcs-Git: git://git.debian.org/pkg-e/libs/eio.git
+Vcs-Browser: http://git.debian.org/?p=pkg-e/libs/eio.git
+
+Package: libeio1
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Library providing non-blocking I/O using threads
+ This library is part of the Enlightenment Foundation Libraries (EFL). It is
+ intended to provide non-blocking IO by using thread for all operations that
+ may block. It should integrate all the features/functions of Ecore_File that
+ could block.
+
+Package: libeio-dev
+Architecture: any
+Section: libdevel
+Suggests: libeio-doc
+Depends: ${misc:Depends}, libeio1 (= ${binary:Version}),
+ libeina-dev (>= 1.7.4), libeet-dev (>= 1.7.4), libecore-dev (>= 1.7.4)
+Description: EIO headers and static libraries
+ This library is part of the Enlightenment Foundation Libraries (EFL). It is
+ intended to provide non-blocking IO by using thread for all operations that
+ may block. It should integrate all the features/functions of Ecore_File that
+ could block.
+ .
+ This package contains headers and static libraries for the EIO library.
+
+Package: libeio-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Enhances: libeio-dev
+Description: EIO API Documentation
+ This library is part of the Enlightenment Foundation Libraries (EFL). It is
+ intended to provide non-blocking IO by using thread for all operations that
+ may block. It should integrate all the features/functions of Ecore_File that
+ could block.
+ .
+ This package provides development documentation (html and manpages)for the
+ EIO library.
+
+Package: libeio-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: ${misc:Depends}, libeio1 (= ${binary:Version})
+Description: Debugging symbols for libeio
+ This library is part of the Enlightenment Foundation Libraries (EFL). It is
+ intended to provide non-blocking IO by using thread for all operations that
+ may block. It should integrate all the features/functions of Ecore_File that
+ could block.
+ .
+ This package contains unstripped shared libraries. It is provided primarily
+ to provide a backtrace with names in a debugger, this makes it somewhat easier
+ to interpret core dumps. The libraries are installed in /usr/lib/debug and
+ are automatically used by gdb.
