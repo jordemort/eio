@@ -1,0 +1,57 @@
+Eio 1.7.4
+
+Changes since Eio 1.7.3:
+------------------------
+
+Fixes:
+        - Fixed crash in eio_monitor_del.
+	- Properly destroy fd on exec.
+        - Add XML output to doc
+        - Add installation rule for doc
+
+
+Eio 1.7.3
+
+Changes since Eio 1.7.2:
+------------------------
+
+Fixes:
+	- Fix build on Solaris.
+	- Don't leak fd on exec.
+	- Don't stop on limited access right.
+
+Eio 1.7.2
+
+Changes since Eio 1.7.1:
+-------------------------
+
+No changes, just updating to keep in sync with last release.
+
+Changes since Eio 1.7.0:
+-------------------------
+
+Improvements:
+	- path monitoring on Windows.
+
+Fixes:
+        - Fix memory corruption by allocating enough memory in
+        eio_eet_data_read_cipher().
+	- Fix build with xattr without splice.
+
+Changes since Eio 1.0.0:
+-------------------------
+
+Additions:
+
+Fixes:
+	- build out of tree.
+	- detect when requesting to monitor a different file with the same name.
+	- memory leak when shutting down fallback monitor.
+	- properly shutdown monitor.
+        - Fix segfault when shutting down the Windows monitor.
+	- Fix memory leak when using file_associate.
+
+Improvements:
+	- Add log debugging macros.
+
+Removal:
