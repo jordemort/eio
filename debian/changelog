@@ -1,3 +1,9 @@
+eio (1.7.4-2) unstable; urgency=low
+
+  * Upload to unstable
+
+ -- Albin Tonnerre <lutin@debian.org>  Sat, 11 May 2013 13:55:42 +0200
+
 eio (1.7.4-1) experimental; urgency=low
 
   * Initial upload to Debian (Closes: #696734)
