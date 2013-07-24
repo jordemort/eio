@@ -1,3 +1,9 @@
+eio (1.7.7-1) experimental; urgency=low
+
+  * Imported Upstream version 1.7.7
+
+ -- Jordan Webb <jordan.webb@gmail.com>  Wed, 24 Jul 2013 05:25:53 +0000
+
 eio (1.7.4-2) unstable; urgency=low
 
   * Upload to unstable
