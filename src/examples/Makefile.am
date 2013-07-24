@@ -21,6 +21,10 @@ LDADD = \
 SRCS = \
 	eio_file_ls.c
 
+if EFL_INSTALL_EXAMPLES
+files_DATA += $(SRCS)
+endif
+
 examples_PROGRAMS =
 
 if EFL_BUILD_EXAMPLES

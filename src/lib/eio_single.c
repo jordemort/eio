@@ -418,8 +418,9 @@ eio_file_direct_stat(const char *path,
 {
    Eio_File_Stat *s = NULL;
 
-   if (!path || !done_cb || !error_cb)
-     return NULL;
+   EINA_SAFETY_ON_NULL_RETURN_VAL(path, NULL);
+   EINA_SAFETY_ON_NULL_RETURN_VAL(done_cb, NULL);
+   EINA_SAFETY_ON_NULL_RETURN_VAL(error_cb, NULL);
 
    s = malloc(sizeof (Eio_File_Stat));
    if (!s) return NULL;
@@ -450,8 +451,9 @@ eio_file_direct_lstat(const char *path,
 #ifdef HAVE_LSTAT
    Eio_File_Stat *s = NULL;
 
-   if (!path || !done_cb || !error_cb)
-     return NULL;
+   EINA_SAFETY_ON_NULL_RETURN_VAL(path, NULL);
+   EINA_SAFETY_ON_NULL_RETURN_VAL(done_cb, NULL);
+   EINA_SAFETY_ON_NULL_RETURN_VAL(error_cb, NULL);
 
    s = malloc(sizeof (Eio_File_Stat));
    if (!s) return NULL;
@@ -482,8 +484,9 @@ eio_file_unlink(const char *path,
 {
    Eio_File_Unlink *l = NULL;
 
-   if (!path || !done_cb || !error_cb)
-     return NULL;
+   EINA_SAFETY_ON_NULL_RETURN_VAL(path, NULL);
+   EINA_SAFETY_ON_NULL_RETURN_VAL(done_cb, NULL);
+   EINA_SAFETY_ON_NULL_RETURN_VAL(error_cb, NULL);
 
    l = malloc(sizeof (Eio_File_Unlink));
    if (!l) return NULL;
@@ -511,8 +514,9 @@ eio_file_mkdir(const char *path,
 {
    Eio_File_Mkdir *r = NULL;
 
-   if (!path || !done_cb || !error_cb)
-     return NULL;
+   EINA_SAFETY_ON_NULL_RETURN_VAL(path, NULL);
+   EINA_SAFETY_ON_NULL_RETURN_VAL(done_cb, NULL);
+   EINA_SAFETY_ON_NULL_RETURN_VAL(error_cb, NULL);
 
    r = malloc(sizeof (Eio_File_Mkdir));
    if (!r) return NULL;
@@ -541,8 +545,9 @@ eio_file_chmod(const char *path,
 {
    Eio_File_Mkdir *r = NULL;
 
-   if (!path || !done_cb || !error_cb)
-     return NULL;
+   EINA_SAFETY_ON_NULL_RETURN_VAL(path, NULL);
+   EINA_SAFETY_ON_NULL_RETURN_VAL(done_cb, NULL);
+   EINA_SAFETY_ON_NULL_RETURN_VAL(error_cb, NULL);
 
    r = malloc(sizeof (Eio_File_Mkdir));
    if (!r) return NULL;
@@ -572,8 +577,9 @@ eio_file_chown(const char *path,
 {
    Eio_File_Chown *c = NULL;
 
-   if (!path || !done_cb || !error_cb)
-     return NULL;
+   EINA_SAFETY_ON_NULL_RETURN_VAL(path, NULL);
+   EINA_SAFETY_ON_NULL_RETURN_VAL(done_cb, NULL);
+   EINA_SAFETY_ON_NULL_RETURN_VAL(error_cb, NULL);
 
    c = malloc(sizeof (Eio_File_Chown));
    if (!c) return NULL;

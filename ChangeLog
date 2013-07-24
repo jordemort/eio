@@ -92,3 +92,30 @@
 
 	* 1.7.4 release
 
+2012-12-24  Mike Blumenkrantz
+
+        * eio functions no longer crash when passed NULL and throw errors accordingly
+
+2013-01-03  Jérémy Zurcher
+
+	* Add eio_eet_sync symbol.
+
+2013-01-04  Luis Felipe Strano Moraes
+
+	* 1.7.5 release
+
+2013-01-14  Cedric Bail
+
+	* Fix wrong initialization of container in eio_file_map_new.
+
+2013-04-04  Rafael Antognolli
+
+        * 1.7.6 release
+
+2013-04-06  Rafael Antognolli
+
+        * Fix examples sources installation.
+
+2013-04-09  Rafael Antognolli
+
+        * 1.7.6.1 release
