@@ -1,3 +1,30 @@
+Eio 1.7.7
+
+Changes since Eio 1.7.6:
+-------------------------
+
+No changes, just updating to keep in sync with last release.
+
+
+Changes since Eio 1.7.5:
+------------------------
+
+Fixes:
+	* Fix wrongly set container in eio_file_map_new.
+
+
+Eio 1.7.5
+
+Changes since Eio 1.7.4:
+------------------------
+
+Add:
+	* Add eio_eet_sync symbol.
+
+Fixes:
+        * Functions no longer crash when passed NULL and throw errors accordingly
+
+
 Eio 1.7.4
 
 Changes since Eio 1.7.3:
